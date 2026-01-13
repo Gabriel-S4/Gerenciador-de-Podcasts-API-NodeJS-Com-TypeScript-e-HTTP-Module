@@ -5,7 +5,7 @@ import { app } from './app'
 const server = http.createServer(app)
 
 // durante o processo, captura o valor PORT de .env e atribui a port
-const port = process.env.PORT
-server.listen(port, () => {
-    console.log(`servidor ligado na porta ${port}`)
-})
+const port: number = Number(process.env.PORT) || 3333;
+server.listen(port, '0.0.0.0', () => {
+  console.log(`Servidor ligado na porta ${port}`);
+});

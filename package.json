@@ -3,7 +3,7 @@
   "name": "projeto-app-flow",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.ts",
   "directories": {
     "doc": "docs"
   },
